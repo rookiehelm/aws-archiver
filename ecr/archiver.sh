@@ -1,5 +1,9 @@
 #!/bin/bash
-
+# this is ecr archiver
+# this is ecr archiver
+# this is ecr archiver
+# this is ecr archiver
+# this is ecr archiver
 YEARS=1
 ECR_REPO=""
 S3_BUCKET=""
@@ -30,7 +34,6 @@ should_refresh_login() {
     last_login=$(cat $LAST_LOGIN_FILE)
     current_time=$(date +%s)
     time_diff=$((current_time - last_login))
-
     if [ $time_diff -ge $LOGIN_REFRESH_INTERVAL ]; then
         return 0
     fi
